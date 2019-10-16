@@ -5,14 +5,14 @@ var testVals = [{
   `,
   testVals: {
     inputs: [
-        [[4,2,3,6,7,1,8,10,9]], 
-        [[24,49,63,6,79,65,60,86,94,36,40,29,42,25,12,4,83,88,4,72]],
-      
+      [[4, 2, 3, 6, 7, 1, 8, 10, 9]],
+      [[24, 49, 63, 6, 79, 65, 60, 86, 94, 36, 40, 29, 42, 25, 12, 4, 83, 88, 4, 72]],
+
     ],
-    outputs:    
-    [  50,
-       961
-    ]
+    outputs:
+      [50,
+        961
+      ]
   },
   functionToTest: 'sumArray'
 }, {
@@ -25,8 +25,8 @@ var testVals = [{
     `,
   testVals: {
     inputs: [
-        [[4,2,3,6,7,1,8,10,9], 30], 
-        [[24,49,63,6,79,65,60,86,94,36,40,29,42,25,12,4,83,88,4,72], 500],
+      [[4, 2, 3, 6, 7, 1, 8, 10, 9], 30],
+      [[24, 49, 63, 6, 79, 65, 60, 86, 94, 36, 40, 29, 42, 25, 12, 4, 83, 88, 4, 72], 500],
     ],
     outputs: [
       [4, 2, 3, 6, 7, 1], [24, 49, 63, 6, 79, 65, 60, 86, 36, 29]
@@ -41,12 +41,12 @@ var testVals = [{
     `,
   testVals: {
     inputs: [
-      [['Clyde','Sue','Jerry','Jo'], 4],
-      [['chuck','sandy','mindy','todd'],2],
-      [['chuck','sandy','mindy','todd'],20]
+      [['Clyde', 'Sue', 'Jerry', 'Jo'], 4],
+      [['chuck', 'sandy', 'mindy', 'todd'], 2],
+      [['chuck', 'sandy', 'mindy', 'todd'], 20]
     ],
     outputs: [
-      ['Sue','Jo'], [], ['chuck','sandy','mindy','todd']
+      ['Sue', 'Jo'], [], ['chuck', 'sandy', 'mindy', 'todd']
     ]
   },
   functionToTest: 'getAllNamesShorterThan'
@@ -59,16 +59,15 @@ var testVals = [{
     Please note that the next lines are generated via newlines`,
   testVals: {
     inputs: [
-      [{'familyName' : 'Paschal','givenName': 'Daniel','greeting': 'Mr.','age': 43,'height' : 185,'colors': {'eye': 'blue','hair': 'brown'},'home address': {'streetNumber': '9200','streetName': 'Irvine Center Drive','state': 'CA','zip': 92618,'city': 'Irvine'}}],
-      [{'familyName' : 'McGee','givenName': 'Chuckles','greeting': 'Miss.','age': 28,'height' : 165,'colors': {'eye': 'green','hair': 'green'},'home address': {'streetNumber': '12345','streetName': 'Any St','state': 'Mo','zip': 63102,'city': 'Kansas City'}}],
+      [{ 'familyName': 'Paschal', 'givenName': 'Daniel', 'greeting': 'Mr.', 'age': 43, 'height': 185, 'colors': { 'eye': 'blue', 'hair': 'brown' }, 'home address': { 'streetNumber': '9200', 'streetName': 'Irvine Center Drive', 'state': 'CA', 'zip': 92618, 'city': 'Irvine' } }],
+      [{ 'familyName': 'McGee', 'givenName': 'Chuckles', 'greeting': 'Miss.', 'age': 28, 'height': 165, 'colors': { 'eye': 'green', 'hair': 'green' }, 'home address': { 'streetNumber': '12345', 'streetName': 'Any St', 'state': 'MO', 'zip': 63102, 'city': 'Kansas City' } }],
     ],
     outputs: [`Mr. Daniel Paschal
 9200 Irvine Center Drive
-Irvine, CA 92618`,`Miss. Chuckles McGee
+Irvine, CA 92618`, `Miss. Chuckles McGee
 12345 Any St
-Kansas City, Mo 63102`
+Kansas City, MO 63102`
     ]
   },
   functionToTest: 'makeLabel'
 }]
-

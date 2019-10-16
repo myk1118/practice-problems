@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Number or Array Element</title>
+
+    <script>
+        function random_range(start_num, end_num) {
+            /*
+            if (Array.isArray(start_num)) {
+                //give a random item from the array
+            }
+            */
+
+            var answer = Math.floor(Math.random() * (end_num - start_num + 1)) + start_num;
+            return answer;
+        }
+
+        var sunday = random_range(1, 100);
+        console.log(sunday);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

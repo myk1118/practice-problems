@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Do Math</title>
+
+    <script>
+        function do_math(num1, num2, operator) {
+            if (operator === '+') {
+                var answer = num1 + num2;
+            } else if (operator === '-') {
+                var answer = num1 - num2;
+            } else if (operator === ('*' || 'x' || 'X')) {
+                var answer = num1 * num2;
+            } else if (operator === '/') {
+                var answer = num1 / num2;
+            }
+            return answer;
+        }
+
+        //can also use switch
+
+        var sunday = do_math(120, 4, '-');
+        console.log(sunday);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
