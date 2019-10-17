@@ -5,14 +5,14 @@ var testVals = [{
   `,
   testVals: {
     inputs: [
-        ['var/www/html'], 
-        ['stuff/thing/stuff/howdy'],
-      
+      ['var/www/html'],
+      ['stuff/thing/stuff/howdy'],
+
     ],
-    outputs:    
-    [  ['var','www','html'],
-       ['stuff','thing','stuff','howdy'],
-    ]
+    outputs:
+      [['var', 'www', 'html'],
+      ['stuff', 'thing', 'stuff', 'howdy'],
+      ]
   },
   functionToTest: 'getPath'
 }, {
@@ -28,8 +28,8 @@ var testVals = [{
     `,
   testVals: {
     inputs: [
-        ['http://learningfuze.com:80/part-time/details/index.html'], 
-        ['https://google.com:443/account/content.asp'],
+      ['http://learningfuze.com:80/part-time/details/index.html'],
+      ['https://google.com:443/account/content.asp'],
     ],
     outputs: [
       {
@@ -55,12 +55,12 @@ var testVals = [{
   returns: 3`,
   testVals: {
     inputs: [
-      [['oh','what','A','glorious','Day']],
-      [['YOU','KNOW','it']],
-      [['not','a','sausage']]
+      [['oh', 'what', 'A', 'glorious', 'Day']],
+      [['YOU', 'KNOW', 'it']],
+      [['not', 'a', 'sausage']]
     ],
     outputs: [
-      2,2,0
+      2, 2, 0
     ]
   },
   functionToTest: 'getCapitalCount'
@@ -79,28 +79,27 @@ var testVals = [{
   testVals: {
     inputs: [
       [[
-        { num1: 3, num2: 3, op: '/', result: 3},
-        { num1: 12, num2: 4, op: '-', result: 8},
-        { num1: 2, num2: 3, op: '+', result: 5},
-        { num1: -5, num2: -2, op: '*', result: -10}
+        { num1: 3, num2: 3, op: '/', result: 3 },
+        { num1: 12, num2: 4, op: '-', result: 8 },
+        { num1: 2, num2: 3, op: '+', result: 5 },
+        { num1: -5, num2: -2, op: '*', result: -10 }
       ]],
       [[
-        { num1: 2, num2: 1, op: '+', result: 3},
-        { num1: -3, num2: -1, op: '+', result: -4},
-        { num1: 20, num2: 2, op: '/', result: 2}
+        { num1: 2, num2: 1, op: '+', result: 3 },
+        { num1: -3, num2: -1, op: '+', result: -4 },
+        { num1: 20, num2: 2, op: '/', result: 2 }
       ]],
     ],
     outputs: [
       [
-        { num1: 12, num2: 4, op: '-', result: 8},
-        { num1: 2, num2: 3, op: '+', result: 5}
-      ], 
+        { num1: 12, num2: 4, op: '-', result: 8 },
+        { num1: 2, num2: 3, op: '+', result: 5 }
+      ],
       [
-        { num1: 2, num2: 1, op: '+', result: 3},
-        { num1: -3, num2: -1, op: '+', result: -4}
+        { num1: 2, num2: 1, op: '+', result: 3 },
+        { num1: -3, num2: -1, op: '+', result: -4 }
       ]
     ]
   },
   functionToTest: 'correctCalcChecker'
 }]
-
