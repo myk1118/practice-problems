@@ -1,11 +1,13 @@
-.hehe{
+.hehe {
 	background-color: lavender;
 }
-.hehe::after{
+
+.hehe::after {
 	content: 'updated!';
 	background-color: lightblue;
 }
-.invert{
+
+.invert {
 	transform: rotateZ(180deg);
 	display: inline-block;
 }
