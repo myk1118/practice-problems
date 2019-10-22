@@ -1,23 +1,28 @@
-.transactionRecord:nth-of-type(1){
+.transactionRecord:nth-of-type(1) {
 	background-color: black;
 	color: white;
 	font-weight: bold;
 }
-.transactionRecord{
+
+.transactionRecord {
 	display: flex;
 	border-bottom: 1px solid black;
 	width: 100%;
 }
-.transactionRecord > * {
+
+.transactionRecord>* {
 	border-right: 1px solid black;
 	padding-left: .5%;
 }
-.transactionType{
+
+.transactionType {
 	width: 15%;
 }
-.transactionLocation{
+
+.transactionLocation {
 	width: 60%;
 }
-.transactionAmount{
+
+.transactionAmount {
 	width: 25%;
 }
